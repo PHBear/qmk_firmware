@@ -58,17 +58,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // ||---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------||
         KC_LSFT,        KC_LCTL,        KC_LALT,        KC_LGUI,        KC_DEL,        KC_NO,          KC_NO,          KC_LEFT,        KC_DOWN,        KC_UP,          KC_RGHT,        KC_BSPC,
 // ||---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------||
-        RGB_MOD,        RGB_SPD,        RGB_SPI,        RGB_VAI,        RGB_VAD,       KC_NO,          KC_NO,          KC_ENT,         KC_TAB,         KC_NO,          KC_NO,          KC_NO,
+        RGB_MOD,        RGB_SPD,        RGB_SPI,        RGB_VAI,        RGB_VAD,       KC_NO,          KC_NO,          KC_ENT,         KC_TAB,         KC_NO,          KC_NO,          KC_ENT,
 // ||---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------||
         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_TRNS,       KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_NO,           KC_TRNS,        KC_NO,          KC_NO
 )
 };
 
 void keyboard_post_init_user(void) {
-  writePinHigh(LED_RED);
+  //writePinHigh(LED_RED);
   writePinHigh(LED_GREEN);
 }
-
-
 
 
