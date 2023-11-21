@@ -65,8 +65,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 void keyboard_post_init_user(void) {
-  //writePinHigh(LED_RED);
-  writePinHigh(LED_GREEN);
+  writePinHigh(LED_RED);
+  // writePinHigh(LED_GREEN);
 }
 
 
