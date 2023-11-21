@@ -32,13 +32,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_BASE] = LAYOUT_ortho_4x12(
 // ||---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------||
-        KC_ESCAPE,      KC_W,           KC_F,           KC_P,           KC_B,         KC_AUDIO_VOL_DOWN,KC_AUDIO_VOL_UP,    KC_J,       KC_L,           KC_U,           KC_Y,           KC_BSPC,
+        KC_Q,           KC_W,           KC_F,           KC_P,           KC_B,         KC_AUDIO_VOL_DOWN,KC_AUDIO_VOL_UP,    KC_J,       KC_L,           KC_U,           KC_Y,           KC_BSPC,
 // ||---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------||
-        KC_Q,           LCTL_T(KC_R),   LALT_T(KC_S),   LGUI_T(KC_T),   KC_G,           KC_MEDIA_STOP,  KC_NO,          KC_M,           RGUI_T(KC_N),   RALT_T(KC_E),   RCTL_T(KC_I),   KC_NO,
+        LSFT_T(KC_A),   CTL_T(KC_R),   LALT_T(KC_S),   LGUI_T(KC_T),   KC_G,           KC_MEDIA_STOP,  KC_NO,          KC_M,           RGUI_T(KC_N),   RALT_T(KC_E),   RCTL_T(KC_I),   RSFT_T(KC_O),
 // ||---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------||
-        LSFT_T(KC_A),   KC_X,           KC_C,           KC_D,           KC_V,         KC_MEDIA_PREV_TRACK,KC_MEDIA_NEXT_TRACK, KC_K,    KC_H,           KC_COMMA,       KC_DOT,         RSFT_T(KC_O),
+        KC_Z,           KC_X,           KC_C,           KC_D,           KC_V,         KC_MEDIA_PREV_TRACK,KC_MEDIA_NEXT_TRACK, KC_K,    KC_H,           KC_COMMA,       KC_DOT,         KC_NO,
 // ||---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------||
-        KC_Z,           KC_NO,          KC_TAB,         RAISE,          KC_SPC,         KC_NO,         KC_NO,        KC_SPC,         LOWER,          KC_CAPS_LOCK,      KC_NO,          KC_NO
+        KC_NO,           KC_NO,          KC_TAB,         RAISE,          KC_SPC,         KC_NO,         KC_NO,        KC_SPC,         LOWER,          KC_CAPS_LOCK,      KC_NO,          KC_NO
 ),
 
 [_LOWER] = LAYOUT_ortho_4x12(
@@ -54,13 +54,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_RAISE] = LAYOUT_ortho_4x12(
 // ||---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------||
-        KC_NO,          KC_NO,          KC_BTN1,        KC_BTN2,        RGB_TOG,       KC_NO,          KC_NO,          KC_HOME,        KC_PGDN,        KC_PGUP,        KC_END,         KC_NO,
+        KC_NO,          KC_NO,          KC_BTN1,        KC_BTN2,        RGB_TOG,       KC_NO,          KC_NO,          KC_HOME,        KC_PGDN,        KC_PGUP,        KC_END,         KC_BSPC,
 // ||---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------||
-        KC_LSFT,        KC_LCTL,        KC_LALT,        KC_LGUI,        KC_DEL,        KC_NO,          KC_NO,          KC_LEFT,        KC_DOWN,        KC_UP,          KC_RGHT,        KC_BSPC,
+        KC_LSFT,        KC_LCTL,        KC_LALT,        KC_LGUI,        KC_DEL,        KC_NO,          KC_NO,          KC_LEFT,        KC_DOWN,        KC_UP,          KC_RGHT,        KC_ENT,
 // ||---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------||
-        RGB_MOD,        RGB_SPD,        RGB_SPI,        RGB_VAI,        RGB_VAD,       KC_NO,          KC_NO,          KC_ENT,         KC_TAB,         KC_NO,          KC_NO,          KC_ENT,
+        RGB_MOD,        RGB_SPD,        RGB_SPI,        RGB_VAI,        RGB_VAD,       KC_NO,          KC_NO,          KC_ENT,         KC_TAB,         KC_NO,          KC_NO,          KC_NO,
 // ||---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------||
-        KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_TRNS,       KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_NO,           KC_TRNS,        KC_NO,          KC_NO
+        KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_TRNS,       KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_NO,          KC_TRNS,        KC_NO,          KC_NO
 )
 };
 
